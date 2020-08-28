@@ -1,12 +1,15 @@
 package com.selenium;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 
 public class BaseTest 
 {
@@ -40,12 +43,24 @@ public class BaseTest
 		if(dp.getProperty(browser).equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "D:/drivers/chromedriver.exe");
-			driver = new ChromeDriver();
+			
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 14");
+			option.addArguments("--disable-notifications");
+			
+			driver = new ChromeDriver(option);
 		}
 		else if(dp.getProperty(browser).equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "D:/drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
+			ProfilesIni p = new ProfilesIni();
+			FirefoxProfile profile = p.getProfile("SeptemberFFProfile");
+			profile.setPreference("dom.webnotifications.enabled", false);
+			
+			FirefoxOptions option = new FirefoxOptions();
+			option.setProfile(profile);
+			
+			driver = new FirefoxDriver(option);
 		}
 	}
 	
