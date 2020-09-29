@@ -2,7 +2,6 @@ package com.project.September5PMMavenProject;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
 
@@ -65,7 +64,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(dp.getProperty(browser).equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "D:/drivers/chromedriver.exe");
 			
@@ -75,7 +74,7 @@ public class BaseTest
 			
 			driver = new ChromeDriver(option);
 		}
-		else if(dp.getProperty(browser).equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "D:/drivers/geckodriver.exe");
 			ProfilesIni p = new ProfilesIni();

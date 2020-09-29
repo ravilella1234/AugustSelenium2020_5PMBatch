@@ -12,6 +12,7 @@ import org.testng.annotations.AfterSuite;
 
 public class TC_006 
 {
+	
   @Test(priority = 1)
   public void f() 
   {
