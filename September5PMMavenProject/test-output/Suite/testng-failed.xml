@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="testnglistners.Listner"/>
+    <listener class-name="testnglistners.RetryListener"/>
+  </listeners>
+  <test name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.project.September5PMMavenProject.RadioButton1">
+      <class name="com.project.September5PMMavenProject.TC_007">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="radioButtonTest"/>
-          <include name="afterMethod"/>
+          <include name="endProcess"/>
+          <include name="startProcess"/>
+          <include name="amazonTest"/>
         </methods>
-      </class> <!-- com.project.September5PMMavenProject.RadioButton1 -->
+      </class> <!-- com.project.September5PMMavenProject.TC_007 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
