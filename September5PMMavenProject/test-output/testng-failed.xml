@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="excelDataDriven.facebookWithDataProvider">
+      <class name="pom.POM_001">
         <methods>
-          <include name="f" invocation-numbers="0"/>
+          <include name="endProcess"/>
+          <include name="login"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- excelDataDriven.facebookWithDataProvider -->
+      </class> <!-- pom.POM_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

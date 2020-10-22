@@ -1,70 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22093" started-at="2020-10-20T12:11:27Z" finished-at="2020-10-20T12:11:49Z">
+  <suite name="Default suite" duration-ms="17618" started-at="2020-10-22T12:12:54Z" finished-at="2020-10-22T12:13:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22093" started-at="2020-10-20T12:11:27Z" finished-at="2020-10-20T12:11:49Z">
-      <class name="excelDataDriven.facebookWithDataProvider">
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.facebookWithDataProvider@1d548a08]" name="f" duration-ms="10259" started-at="2020-10-20T17:41:29Z" data-provider="dp" finished-at="2020-10-20T17:41:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=loginSuccess, RunMode=N, Pasword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Execution is set as No....]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Execution is set as No....
-	at excelDataDriven.facebookWithDataProvider.f(facebookWithDataProvider.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+    <test name="Default test" duration-ms="17618" started-at="2020-10-22T12:12:54Z" finished-at="2020-10-22T12:13:12Z">
+      <class name="pom.POM_001">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:pom.POM_001@4034c28c]" name="startProcess" is-config="true" duration-ms="8530" started-at="2020-10-22T17:42:54Z" finished-at="2020-10-22T17:43:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.facebookWithDataProvider@1d548a08]" name="f" duration-ms="10379" started-at="2020-10-20T17:41:39Z" data-provider="dp" finished-at="2020-10-20T17:41:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=loginSuccess, RunMode=Y, Pasword=P1, UserName=U1, Browser=firefox}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="login()[pri:0, instance:pom.POM_001@4034c28c]" name="login" duration-ms="9017" started-at="2020-10-22T17:43:03Z" finished-at="2020-10-22T17:43:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- excelDataDriven.facebookWithDataProvider -->
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:pom.POM_001@4034c28c]" name="endProcess" is-config="true" duration-ms="0" started-at="2020-10-22T17:43:12Z" finished-at="2020-10-22T17:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- pom.POM_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -73,9 +74,9 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(browser.equals("chrome"))
+		if(dp.getProperty(browser).equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:/drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\Sept Drivers\\chromedriver.exe");
 			
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 14");
@@ -83,7 +84,7 @@ public class BaseTest
 			
 			driver = new ChromeDriver(option);
 		}
-		else if(browser.equals("firefox"))
+		else if(dp.getProperty(browser).equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "D:/drivers/geckodriver.exe");
 			ProfilesIni p = new ProfilesIni();
@@ -95,6 +96,7 @@ public class BaseTest
 			
 			driver = new FirefoxDriver(option);
 		}
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
 	public static void navigateUrl(String url)
