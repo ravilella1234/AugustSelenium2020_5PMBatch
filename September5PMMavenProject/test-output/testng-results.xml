@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17618" started-at="2020-10-22T12:12:54Z" finished-at="2020-10-22T12:13:12Z">
+  <suite name="Default suite" duration-ms="19182" started-at="2020-10-28T12:07:35Z" finished-at="2020-10-28T12:07:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17618" started-at="2020-10-22T12:12:54Z" finished-at="2020-10-22T12:13:12Z">
-      <class name="pom.POM_001">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:pom.POM_001@4034c28c]" name="startProcess" is-config="true" duration-ms="8530" started-at="2020-10-22T17:42:54Z" finished-at="2020-10-22T17:43:03Z">
+    <test name="Default test" duration-ms="19182" started-at="2020-10-28T12:07:35Z" finished-at="2020-10-28T12:07:54Z">
+      <class name="switches.FileUpload">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:switches.FileUpload@16aa0a0a]" name="beforeMethod" is-config="true" duration-ms="15635" started-at="2020-10-28T17:37:35Z" finished-at="2020-10-28T17:37:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="login()[pri:0, instance:pom.POM_001@4034c28c]" name="login" duration-ms="9017" started-at="2020-10-22T17:43:03Z" finished-at="2020-10-22T17:43:12Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fileupload()[pri:0, instance:switches.FileUpload@16aa0a0a]" name="fileupload" duration-ms="3430" started-at="2020-10-28T17:37:51Z" finished-at="2020-10-28T17:37:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:pom.POM_001@4034c28c]" name="endProcess" is-config="true" duration-ms="0" started-at="2020-10-22T17:43:12Z" finished-at="2020-10-22T17:43:12Z">
+        </test-method> <!-- fileupload -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:switches.FileUpload@16aa0a0a]" name="afterMethod" is-config="true" duration-ms="30" started-at="2020-10-28T17:37:54Z" finished-at="2020-10-28T17:37:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- pom.POM_001 -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- switches.FileUpload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
